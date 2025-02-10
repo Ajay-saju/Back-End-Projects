@@ -1,22 +1,31 @@
 package com.murukkankada.ecommercestore.Controller;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ProductController {
 
 
     @GetMapping("/products")
-    public void getAllProduct (){}
+    public void getAllProduct() {
+    }
 
 
     @GetMapping("/products/{id}")
-    public void getProductById() {}
+    public void getProductById(@PathVariable("id") Integer id) {
+    }
 
-    public void createProduct(){}
+    @PostMapping("/products")
+    public void createProduct() {
+    }
 
-    public void deleteProductById(){}
+    public void updateProduct(@PathVariable("id") Integer id) {
+
+    }
+
+    @DeleteMapping("/products/{id}")
+    public void deleteProductById(@PathVariable("id") Integer id) {
+    }
 
 }
