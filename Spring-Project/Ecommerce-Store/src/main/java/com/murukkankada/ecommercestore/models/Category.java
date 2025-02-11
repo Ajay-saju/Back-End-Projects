@@ -1,6 +1,7 @@
 package com.murukkankada.ecommercestore.models;
 
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
